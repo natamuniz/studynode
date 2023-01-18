@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Curso de node.js",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natamuniz/studynode.git"
+  },
+  "author": "Natã Muniz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natamuniz/studynode/issues"
+  },
+  "homepage": "https://github.com/natamuniz/studynode#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
