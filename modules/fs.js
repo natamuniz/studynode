@@ -20,5 +20,29 @@ fs.writeFile(
     }
 
     console.log("Arquivo criado com sucesso");
+
+    // Adicionar à um arquivo
+    fs.appendFile(
+      path.join(__dirname, "/test", "test.txt"),
+      "hello world",
+      (error) => {
+        if (error) {
+          return console.log("Erro: ", error);
+        }
+        console.log("Arquivo modificado com sucesso!");
+      }
+    );
+
+    // Ler arquivos
+    fs.readFile(
+      path.join(__dirname, "/test", "test.txt"),
+      "utf8",
+      (error, data) => {
+        if (error) {
+          return console.log("Erro: ", error);
+        }
+        console.log(data);
+      }
+    );
   }
 );
